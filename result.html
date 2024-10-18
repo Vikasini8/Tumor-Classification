@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breast Cancer Prediction Result</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .result-malignant {
+        background-color: #ff8080;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      .result-benign {
+        background-color: #b3ffb3;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Breast Cancer Prediction Result</h1>
+    {% if prediction == 'Malignant' %}
+      <p class="result-malignant">The predicted diagnosis is: Malignant</p>
+    {% else %}
+      <p class="result-benign">The predicted diagnosis is: Benign</p>
+    {% endif %}
+  </body>
+</html>

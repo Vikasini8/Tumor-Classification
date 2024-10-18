@@ -1,0 +1,182 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body {
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+        }
+        h1 {
+          text-align: center;
+          color: #a80aa8;
+          margin-top: 50px;
+        }
+        form {
+          margin: 50px auto;
+          width: 400px;
+          background-color: #ffffff;
+          border: 1px solid #a80aa8;
+          padding: 20px;
+          border-radius: 5px;
+        }
+        label {
+          display: inline-block;
+          width: 120px;
+          text-align: right;
+          margin-right: 20px;
+          color: #a80aa8;
+        }
+        input[type="text"] {
+          border: 1px solid #a80aa8;
+          padding: 10px;
+          border-radius: 5px;
+          width: 200px;
+        }
+        form {
+            position: relative;
+            margin: 50px auto;
+            width: 400px;
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            border-radius: 5px;
+          }
+          
+          input[type="submit"] {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color:  #a80aa8;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+          }
+          
+        input[type="submit"]:hover {
+          background-color: #a80aa8;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Breast Cancer Prediction</h1>
+    <form action="/predict" method="post">
+      <label for="radius">Radius:</label>
+      <input type="text" id="radius" name="radius"><br><br>
+      <label for="texture">Texture:</label>
+      <input type="text" id="texture" name="texture"><br><br>
+      <label for="perimeter">Perimeter:</label>
+      <input type="text" id="perimeter" name="perimeter"><br><br>
+      <label for="area">Area:</label>
+      <input type="text" id="area" name="area"><br><br>
+      <label for="smoothness">Smoothness:</label>
+      <input type="text" id="smoothness" name="smoothness"><br><br>
+      <label for="compactness">Compactness:</label>
+      <input type="text" id="compactness" name="compactness"><br><br>
+      <label for="concavity">Concavity:</label>
+      <input type="text" id="concavity" name="concavity"><br><br>
+      <label for="concave_points">Concave points:</label>
+      <input type="text" id="concave_points" name="concave_points"><br><br>
+      <label for="symmetry">Symmetry:</label>
+      <input type="text" id="symmetry" name="symmetry"><br><br>
+      <label for="fractal_dimension">Fractal dimension:</label>
+      <input type="text" id="fractal_dimension" name="fractal_dimension"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body {
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+        }
+        h1 {
+          text-align: center;
+          color: #a80aa8;
+          margin-top: 50px;
+        }
+        form {
+          margin: 50px auto;
+          width: 400px;
+          background-color: #ffffff;
+          border: 1px solid #a80aa8;
+          padding: 20px;
+          border-radius: 5px;
+        }
+        label {
+          display: inline-block;
+          width: 120px;
+          text-align: right;
+          margin-right: 20px;
+          color: #a80aa8;
+        }
+        input[type="text"] {
+          border: 1px solid #a80aa8;
+          padding: 10px;
+          border-radius: 5px;
+          width: 200px;
+        }
+        form {
+            position: relative;
+            margin: 50px auto;
+            width: 400px;
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            border-radius: 5px;
+          }
+          
+          input[type="submit"] {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color:  #a80aa8;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+          }
+          
+        input[type="submit"]:hover {
+          background-color: #a80aa8;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Breast Cancer Prediction</h1>
+    <form action="/predict" method="post">
+      <label for="radius">Radius:</label>
+      <input type="text" id="radius" name="radius"><br><br>
+      <label for="texture">Texture:</label>
+      <input type="text" id="texture" name="texture"><br><br>
+      <label for="perimeter">Perimeter:</label>
+      <input type="text" id="perimeter" name="perimeter"><br><br>
+      <label for="area">Area:</label>
+      <input type="text" id="area" name="area"><br><br>
+      <label for="smoothness">Smoothness:</label>
+      <input type="text" id="smoothness" name="smoothness"><br><br>
+      <label for="compactness">Compactness:</label>
+      <input type="text" id="compactness" name="compactness"><br><br>
+      <label for="concavity">Concavity:</label>
+      <input type="text" id="concavity" name="concavity"><br><br>
+      <label for="concave_points">Concave points:</label>
+      <input type="text" id="concave_points" name="concave_points"><br><br>
+      <label for="symmetry">Symmetry:</label>
+      <input type="text" id="symmetry" name="symmetry"><br><br>
+      <label for="fractal_dimension">Fractal dimension:</label>
+      <input type="text" id="fractal_dimension" name="fractal_dimension"><br><br>
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
